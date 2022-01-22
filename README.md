@@ -1,6 +1,6 @@
 # Robustness and Accuracy Could Be Reconcilable by (Proper) Definition
 
-The code for the ICML 2022 submission **Robustness and Accuracy Could Be Reconcilable by (Proper) Definition** (paper ID 1046).
+Code for the ICML 2022 submission **Robustness and Accuracy Could Be Reconcilable by (Proper) Definition** (paper ID 1046).
 
 ## Environment settings and libraries we used in our experiments
 
