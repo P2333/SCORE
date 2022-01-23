@@ -79,4 +79,4 @@ To re-implement the toy demos, we could run:
 ```python
 python toy_demo_1d.py --demo PGDAT --divergence KL --divergence_C L1
 ```
-The flag `--demo` refers to the objective used for training; `--divergence` refers to the used metric loss; '--divergence_C' refers to the metric calculating SCORE values.
+The flag `--demo` refers to the objective used for training; `--divergence` refers to the used metric loss; `--divergence_C` refers to the metric calculating SCORE values.
