@@ -73,3 +73,10 @@ python eval-aa.py --data-dir 'cifar-data' \
     --log-dir 'trained_models' \
     --desc 'WRN28-10Swish_cifar10s_lr0p2_TRADES4_epoch400_bs512_fraction0p7_LSE'
 ```
+
+## Toy demos
+To re-implement the toy demos, we could run:
+```python
+python toy_demo_1d.py --demo PGDAT --divergence KL --divergence_C L1
+```
+The flag `--demo` refers to the objective used for training; `--divergence` refers to the used metric loss; '--divergence_C' refers to the metric calculating SCORE values.
