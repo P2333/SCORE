@@ -73,6 +73,7 @@ Below are pretrained checkpoints of WRN-28-10 with `--beta=3.0`:
 | Dataset | Model | Clean | AA | |
 |---|---|:---:|:---:|:---:|
 | CIFAR-10 | WRN-28-10 | 88.61 | 61.04| [checkpoint](https://ml.cs.tsinghua.edu.cn/~tianyu/SCORE/checkpoints/CIFAR-10/WRN-28-10_cifar10.pt) |
+| CIFAR-10 | WRN-70-16 | 89.01 | 63.35| [checkpoint](https://drive.google.com/file/d/15xN627o4cplgVQpJkR5Pm8I6KqGod-tF/view?usp=sharing) |
 | CIFAR-100 | WRN-28-10 | 63.66 | 31.08 | [checkpoint](https://ml.cs.tsinghua.edu.cn/~tianyu/SCORE/checkpoints/CIFAR-100/WRN-28-10_cifar100.pt) |
 
 ## Evaluation Commands
