@@ -1,6 +1,6 @@
 # Robustness and Accuracy Could Be Reconcilable by (Proper) Definition
 
-Code for the paper **Robustness and Accuracy Could Be Reconcilable by (Proper) Definition**.
+Code for the paper [Robustness and Accuracy Could Be Reconcilable by (Proper) Definition](https://arxiv.org/pdf/2202.10103.pdf).
 
 ## Environment settings and libraries we used in our experiments
 
@@ -24,7 +24,7 @@ pip install git+https://github.com/fra31/auto-attack
 
 - Download 1M DDPM generated data from the [official implementation](https://github.com/deepmind/deepmind-research/tree/master/adversarial_robustness) of Rebuffi et al., 2021:
 
-| dataset | model | size | link |
+| Dataset | Extra | Size | Link |
 |---|---|:---:|:---:|
 | CIFAR-10 | DDPM | 1M | [npz](https://storage.googleapis.com/dm-adversarial-robustness/cifar10_ddpm.npz) |
 | CIFAR-100 | DDPM | 1M | [npz](https://storage.googleapis.com/dm-adversarial-robustness/cifar100_ddpm.npz) |
@@ -65,6 +65,15 @@ python train-wa.py --data-dir 'cifar-data' \
     --LSE --ls 0
 ```
 Here we only need to activate the flag `--LSE` and set `--ls 0`.
+
+## Pretrained checkpoints
+
+Below are pretrained checkpoints of WRN-28-10 with `--beta=3.0`:
+
+| Dataset | Model | Clean | AA | |
+|---|---|:---:|:---:|:---:|
+| CIFAR-10 | WRN-28-10 | 88.61 | 61.40| [checkpoint](https://ml.cs.tsinghua.edu.cn/~tianyu/SCORE/checkpoints/CIFAR-10/WRN-28-10_cifar10.pt) |
+| CIFAR-100 | WRN-28-10 | 63.66 | 31.08 | [checkpoint](https://ml.cs.tsinghua.edu.cn/~tianyu/SCORE/checkpoints/CIFAR-100/WRN-28-10_cifar100.pt) |
 
 ## Evaluation Commands
 For evaluation under AutoAttack, run the command (taking our method as an example):
