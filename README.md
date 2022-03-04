@@ -68,7 +68,7 @@ Here we only need to activate the flag `--LSE` and set `--ls 0`.
 
 ## Pretrained checkpoints
 
-Below are pretrained checkpoints of WRN-28-10 with `--beta=3.0`:
+Below are pretrained checkpoints of WRN-28-10 with `--beta=3.0` (download to trained_models/[model_names]/weights-best.pt):
 
 | Dataset | Model | Clean | AA | |
 |---|---|:---:|:---:|:---:|
@@ -82,7 +82,7 @@ For evaluation under AutoAttack, run the command (taking our method as an exampl
 ```python
 python eval-aa.py --data-dir 'cifar-data' \
     --log-dir 'trained_models' \
-    --desc 'WRN28-10Swish_cifar10s_lr0p2_TRADES4_epoch400_bs512_fraction0p7_LSE'
+    --desc [model_names]
 ```
 
 ## Toy demos
