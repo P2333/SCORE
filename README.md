@@ -68,7 +68,7 @@ Here we only need to activate the flag `--LSE` and set `--ls 0`.
 
 ## Pretrained checkpoints
 
-Below are pretrained checkpoints of WRN-28-10 with `--beta=3.0`:
+Below are pretrained checkpoints of WRN-28-10 (Swish) and WRN-70-16 (Swish) with `--beta=3.0`:
 
 | Dataset | Model | Clean | AA | | |
 |---|---|:---:|:---:|:---:|:---:|
