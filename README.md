@@ -68,21 +68,24 @@ Here we only need to activate the flag `--LSE` and set `--ls 0`.
 
 ## Pretrained checkpoints
 
-Below are pretrained checkpoints of WRN-28-10 with `--beta=3.0` (download to trained_models/[model_names]/weights-best.pt):
+Below are pretrained checkpoints of WRN-28-10 with `--beta=3.0`:
 
-| Dataset | Model | Clean | AA | |
-|---|---|:---:|:---:|:---:|
-| CIFAR-10 | WRN-28-10 | 88.61 | 61.04| [checkpoint](https://ml.cs.tsinghua.edu.cn/~tianyu/SCORE/checkpoints/CIFAR-10/WRN-28-10_cifar10.pt) |
-| CIFAR-10 | WRN-70-16 | 89.01 | 63.35| [checkpoint](https://ml.cs.tsinghua.edu.cn/~tianyu/SCORE/checkpoints/CIFAR-10/WRN-70-16_cifar10.pt) |
-| CIFAR-100 | WRN-28-10 | 63.66 | 31.08 | [checkpoint](https://ml.cs.tsinghua.edu.cn/~tianyu/SCORE/checkpoints/CIFAR-100/WRN-28-10_cifar100.pt) |
-| CIFAR-100 | WRN-70-16 | 65.56 | 33.05 | [checkpoint](https://ml.cs.tsinghua.edu.cn/~tianyu/SCORE/checkpoints/CIFAR-100/WRN-70-16_cifar100.pt) |
+| Dataset | Model | Clean | AA | | |
+|---|---|:---:|:---:|:---:|:---:|
+| CIFAR-10 | WRN-28-10 | 88.61 | 61.04| [checkpoint](https://ml.cs.tsinghua.edu.cn/~tianyu/SCORE/checkpoints/CIFAR-10/WRN-28-10_cifar10.pt) | [argtxt](https://ml.cs.tsinghua.edu.cn/~tianyu/SCORE/checkpoints/CIFAR-10/WRN-28-10_cifar10_args.txt)
+| CIFAR-10 | WRN-70-16 | 89.01 | 63.35| [checkpoint](https://ml.cs.tsinghua.edu.cn/~tianyu/SCORE/checkpoints/CIFAR-10/WRN-70-16_cifar10.pt) | [argtxt](https://ml.cs.tsinghua.edu.cn/~tianyu/SCORE/checkpoints/CIFAR-10/WRN-70-16_cifar10_args.txt)
+| CIFAR-100 | WRN-28-10 | 63.66 | 31.08 | [checkpoint](https://ml.cs.tsinghua.edu.cn/~tianyu/SCORE/checkpoints/CIFAR-100/WRN-28-10_cifar100.pt) | [argtxt](https://ml.cs.tsinghua.edu.cn/~tianyu/SCORE/checkpoints/CIFAR-100/WRN-28-10_cifar100_args.txt)
+| CIFAR-100 | WRN-70-16 | 65.56 | 33.05 | [checkpoint](https://ml.cs.tsinghua.edu.cn/~tianyu/SCORE/checkpoints/CIFAR-100/WRN-70-16_cifar100.pt) | [argtxt](https://ml.cs.tsinghua.edu.cn/~tianyu/SCORE/checkpoints/CIFAR-100/WRN-70-16_cifar100_args.txt)
+
+- **Downloading `checkpoint` to `trained_models/mymodel/weights-best.pt`**
+- **Downloading `argtxt` to `trained_models/mymodel/args.txt`**
 
 ## Evaluation Commands
 For evaluation under AutoAttack, run the command (taking our method as an example):
 ```python
 python eval-aa.py --data-dir 'cifar-data' \
     --log-dir 'trained_models' \
-    --desc [model_names]
+    --desc mymodel
 ```
 
 ## Toy demos
