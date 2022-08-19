@@ -1,6 +1,6 @@
 # Robustness and Accuracy Could Be Reconcilable by (Proper) Definition
 
-Code for the paper [Robustness and Accuracy Could Be Reconcilable by (Proper) Definition](https://arxiv.org/pdf/2202.10103.pdf).
+Code for the paper [Robustness and Accuracy Could Be Reconcilable by (Proper) Definition](https://arxiv.org/pdf/2202.10103.pdf) (ICML 2022).
 
 ## Environment settings and libraries we used in our experiments
 
