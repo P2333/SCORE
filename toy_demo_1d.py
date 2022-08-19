@@ -1,9 +1,3 @@
-# CUDA_VISIBLE_DEVICES=6 python toy_demo_1d.py --demo PGDAT --divergence L2
-# CUDA_VISIBLE_DEVICES=5 python toy_demo_1d.py --demo PGDATconsistent --divergence KL
-# CUDA_VISIBLE_DEVICES=4 python toy_demo_1d.py --demo Standard --divergence KL
-# CUDA_VISIBLE_DEVICES=6 python toy_demo_1d.py --demo PGDAT --divergence KL --divergence_C L1
-
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
@@ -241,7 +235,6 @@ def main():
     np.savetxt('toy_results/' + args.demo + '_' + args.divergence + '/record_Standard_loss.txt', np.array(record_Standard_loss))
                 
     print('C_L: ', C_L.item())
-    #print('C_L: ', C_L.item()**2 / 2)
 
 if __name__ == "__main__":
     main()
