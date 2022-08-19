@@ -91,7 +91,7 @@ def trades_loss(model, x_natural, y, optimizer, step_size=0.003, epsilon=0.031, 
 def trades_loss_LSE(model, x_natural, y, optimizer, step_size=0.003, epsilon=0.031, perturb_steps=10, beta=1.0, 
                 attack='linf-pgd', label_smoothing=0.1):
     """
-    TRADES training (Zhang et al, 2019).
+    SCORE training (Ours).
     """
     # criterion_ce = SmoothCrossEntropyLoss(reduction='mean', smoothing=label_smoothing)
     # criterion_kl = nn.KLDivLoss(reduction='sum')
