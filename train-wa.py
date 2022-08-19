@@ -1,7 +1,3 @@
-"""
-Adversarial Training (with improvements from Gowal et al., 2020).
-"""
-
 import json
 import time
 import argparse
