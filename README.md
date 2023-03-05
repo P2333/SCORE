@@ -94,3 +94,32 @@ To re-implement the toy demos, we could run:
 python toy_demo_1d.py --demo PGDAT --divergence KL --divergence_C L1
 ```
 The flag `--demo` refers to the objective used for training; `--divergence` refers to the used metric loss; `--divergence_C` refers to the metric calculating SCORE values.
+
+## References
+If you find the code useful for your research, please consider citing
+```bib
+@inproceedings{pang2022robustness,
+  title={Robustness and Accuracy Could be Reconcilable by (Proper) Definition},
+  author={Pang, Tianyu and Lin, Min and Yang, Xiao and Zhu, Jun and Yan, Shuicheng},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2022}
+}
+```
+
+and/or our related works
+```bib
+@article{wang2023better,
+  title={Better Diffusion Models Further Improve Adversarial Training},
+  author={Wang, Zekai and Pang, Tianyu and Du, Chao and Lin, Min and Liu, Weiwei and Yan, Shuicheng},
+  journal={arXiv preprint arXiv:2302.04638},
+  year={2023}
+}
+```
+```bib
+@inproceedings{pang2021bag,
+  title={Bag of Tricks for Adversarial Training},
+  author={Pang, Tianyu and Yang, Xiao and Dong, Yinpeng and Su, Hang and Zhu, Jun},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2021}
+}
+```
