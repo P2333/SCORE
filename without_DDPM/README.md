@@ -54,3 +54,9 @@ python train_cifar.py --model PreActResNet18 \
                                               --seed 1
 ```
 Here `--lr-max 0.05` and `--clip_loss 0.3` as described in Section 5.2 of our paper.
+
+## Evaluation commands
+```python
+python -u eval_cifar.py --activation YOUR ACTIVATION --out-dir YOUR DIR
+```
+Here `YOUR ACTIVATION` is the activation function used in your model architecture, could be `'ReLU'` or `'Softplus'`. `YOUR DIR` is your file name (automatically generated if you use `--fname auto` during training).
