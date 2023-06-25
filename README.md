@@ -91,9 +91,9 @@ python eval-aa.py --data-dir 'cifar-data' \
 ## Toy demos
 To re-implement the toy demos, we could run:
 ```python
-python toy_demo_1d.py --demo PGDAT --divergence KL --divergence_C L1
+python generate_toy_demo.py --demo PGDAT --divergence KL --divergence_C L1
 ```
-The flag `--demo` refers to the objective used for training; `--divergence` refers to the used metric loss; `--divergence_C` refers to the metric calculating SCORE values.
+The flag `--demo` refers to the objective used for training; `--divergence` refers to the used metric loss; `--divergence_C` refers to the metric calculating SCORE values. The Figures 1 and 2 in our paper are plotted by MATLAB using the script `plot_toy_demo.m`.
 
 ## References
 If you find the code useful for your research, please consider citing
